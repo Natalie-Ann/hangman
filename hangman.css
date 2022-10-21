@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h2 {
+    font-size: 2rem;
+}
+  
+.intro {
+    display: block;
+    margin: 0 auto;
+}
+
+.game_format {
+    display: block;
+}
+
+form {
+    background-color: rgb(2, 2, 73);
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+.game_play {
+    margin: 0 auto;
+    font-family: 'Indie Flower';
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.alphabet {
+    width: 20%;
+    height: 20%;
+}
+
+.alphabet button {
+    margin: 1rem;
+}
+
+.used_letters {
+    width: 20%;
+    height: 20%;
+}
+
+.used_letters p {
+    text-decoration: line-through;
+    font-size: 2rem;
+}
+
+.wordBlanks {
+    width: 100%;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+    transform: scaleX(-1);
+}
+
+#intro_image {
+    transform: scaleX(1);
+}
+
+#start_game, #play_again {
+    display: block;
+    margin: 0 auto;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 1%;
+    color: #ffffff;
+    background: #80003e;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    box-shadow: rgb(0 0 0 / 5%) 0px 1px 0px 0px, rgb(0 0 0 / 20%) 0px -1px 0px 0px inset;
+}
+
+.game_over_screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;    
+}
+
+p {
+    display: inline-block;
+    font-size: 3rem;
+    width: 5rem;
+    height: 4rem;
+    text-align: center;
+    margin: 0;
+}
+
+#game_over_popup {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 25%;
+    left: 50%;
+    margin-left: -287.5px;
+    width: 575px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+#game_over_popup p {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 5% 1%;
+}
+
+.hidden {
+    display: none;
+}
+
+.hint {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+#hint {
+    position: relative;
+    /* left: -1800px; */
+    top: -300px;
+    font-size: xx-large;
+    text-align: left;
+    width: 40%;
+    padding-left: 2%;
+}
+
+/* p {
+    display: inline-block;
+    font-size: 3rem;
+    width: 5rem;
+    height: 4rem;
+    text-align: center;
+    margin: 0;
+} */
+
+aside {
+    width: 20%;
+}
+
+.marker {
+    background: url("./images/blank_space.png") no-repeat 1rem bottom;
+}
+

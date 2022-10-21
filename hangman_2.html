@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman_2.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <main>
+        <section class="intro">
+            <img id="intro_image" src="./images/hangman.jpeg" alt="hangman game logo">
+            <button id="start_game">Start Game!</button>
+        </section>
+
+        <section class="game_format hidden">
+            <form>
+                <label name="category">Pick a category: </label>
+                <select name="category" id="category" required>
+                    <option value="Animals">Animals</option>
+                    <option value="Plants">Plants</option>
+                    <option value="Surprise Me">SURPRISE ME!</option>
+                </select>
+                <fieldset>
+                    <legend>Difficulty Level</legend>
+                    <input type="radio" id="easy" name="easy" value="easy">
+                    <label for="easy">Easy</label>
+
+                    <input type="radio" id="medium" name="medium" value="medium">
+                    <label for="medium">Medium</label>
+
+                    <input type="radio" id="hard" name="hard" value="hard">
+                    <label for="hard">Hard</label>
+                </fieldset>
+                
+                <input type="submit" value="Start Playing!">
+            </form>
+        </section>
+
+        <section class="game_play hidden">
+          <div class="letters__hint">
+            <div class="alphabet">
+              <h2 id="letter_bank_title">Letter Bank</h2>
+          </div>
+          <div class="hint">
+            <button id="hintButton">Reveal Hint</button>
+            <p id="hint" class="hidden">test</p>
+          </div>
+
+          </div>
+          <img id="hangman_drawing" src="./images/hangman_start.png" alt="hangman start gallows">
+          <div class="game_over_screen">
+            <div id="game_over_popup">
+              <p id="lose_message">You lost...</p>
+              <p id="win_message">You won!!!</p>
+              <p>Would you like to play again?</p>
+              <button id="play_again" class="hidden">Play Again!</button>
+            </div>
+          </div>
+          <div class="used_letters">
+              <h2 id="used_letters_title">Used Letters</h2>
+          </div>
+          <div class="wordBlanks"></div>
+        </section>
+
+    </main>
+    <script type="module" src="hangman.js"></script>   
+</body>
+</html>
