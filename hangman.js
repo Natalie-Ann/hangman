@@ -37,7 +37,6 @@ function randomWordSelector(category) {
         let category = categories[randomCategoryIndex];
         let randomWordIndex = getRandomIntInclusive(0, words[category].length - 1);
         
-        console.log(category);
         return words[category][randomWordIndex];
     }
 }
@@ -76,7 +75,6 @@ categoriesForm.addEventListener('submit', (e) => {
     //get category from form
     let formData = new FormData(categoriesForm);
     let category = formData.get('category');
-    console.log(category);
 
     //randomWordSelector
     //random category and random word
@@ -95,7 +93,6 @@ categoriesForm.addEventListener('submit', (e) => {
     })
 
     createSpaces(currentWord);
-    console.log(currentWord);
 
     createAlphabetButtons();
 
@@ -228,7 +225,6 @@ document.addEventListener('keyup', (e) => {
             if (round > hangmanImages.length - 1) {
                 gameOver();
                 displayLosingMessage();
-                console.log('game over');
                 //game over
             } else {
                 hangmanDrawing.setAttribute('src', `${hangmanImages[round]}`);

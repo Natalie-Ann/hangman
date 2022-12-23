@@ -23,7 +23,7 @@ h2 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  border: solid black;
+  /* border: solid black; */
 }
 
 .game_format {
